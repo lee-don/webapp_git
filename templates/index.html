@@ -1,0 +1,427 @@
+
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>川西北之家</title>
+		<link rel="icon" href="/static/images/favicon.ico">
+		<link rel="shortcut icon" href="/static/images/favicon.ico" />
+		<link rel="stylesheet" href="/static/css/style.css">
+		<link rel="stylesheet" href="/static/css/zerogrid.css" >
+		<link rel="stylesheet" href="/static/css/camera.css">
+		<link rel="stylesheet" href="/static/css/form.css">
+		<link rel="stylesheet" href="/static/css/responsive.css">
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/jquery-migrate-1.1.1.js"></script>
+		<script src="/static/js/superfish.js"></script>
+		<script src="/static/js/forms.js"></script>
+		<script src="/static/js/jquery.ui.totop.js"></script>
+		<script src="/static/js/jquery.equalheights.js"></script>
+		<script src="/static/js/jquery.easing.1.3.js"></script>
+		<script src="/static/js/jquery.ui.totop.js"></script>
+		<script src="/static/js/tms-0.4.1.js"></script>
+		<script src="/static/js/css3-mediaqueries.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="/static/http//windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="/static/http//storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="/static/js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="/static/css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="menu_block">
+							<nav class="">
+								<ul class="sf-menu">
+									<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="/#">主       页</a> <strong class="hover"></strong></li>
+									<li class="men1"><a  width="900" onClick="goToByScroll('page2'); return false;" href="/#">  关于</a><strong class="hover"></strong></li>
+									<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="/#">  成绩/产品  </a> <strong class="hover"></strong></li>
+									<!--<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="/#">  产品  </a> <strong class="hover"></strong></li>
+-->
+				<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="/#">  联系我们</a> <strong class="hover"></strong></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<h1 style="font-size:30;font-family:华文行楷" href="/#" onClick="goToByScroll('page1'); return false;">川西北之家</h1>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slider_wrapper">
+							<ul class="items">
+								<li>
+									<img src="/static/images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>看成绩，来之不易</h2>
+									</div>
+								</li>
+								<li>
+									<img src="/static/images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>展未来，任重道远</h2>
+									</div>
+								</li>
+								<li>
+									<img src="/static/images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>立足队情，转变观念</h2>
+									</div>
+								</li>
+								<li>
+									<img src="/static/images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>创新驱动，拓展市场</h2>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page2" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>四川省地质矿产勘查开发局川西北地质队<a onClick="goToByScroll('page3'); return false;" href="/#"><span>（简称川西北地质队）</span></a><a onClick="goToByScroll('page4'); return false;" href="/#"><em></em></a></h3>
+							<div class="text1">
+								<a href="/static/http//blog.templatemonster.com/free-website-templates/" rel="nofollow"> 四川省地质矿产勘查开发局川西北地质队（简称川西北地质队）是1982年初由四川省地矿局原401队、405队、407队、101队等地质队，经“专业划改”组建而成的县处级事业单位性质的综合地质队，隶属四川省地质矿产勘查开发局，具有独立法人资格。长期从事基础地质调查、固体矿产勘查、工程勘察、地灾防治和生态保护等工作，集生产与科研于一体。是中国首届百强地质队、四川省文明单位、AAA级守法诚信单位。基地位于中国科技城—绵阳，占地约113亩。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="/static/images/todo1.png" alt="">
+							<div class="text1"><a href="/#">TODO1</a></div>TODO1
+							<div class="socials1">
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="/static/images/todo2.png" alt="">
+							<div class="text1"><a href="/#">TODO2</a></div> TODO2
+							<div class="socials1">
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<a href="/kaipiaoxingxi"><img src="/static/images/todo3.png" alt=""></img></a>
+							<div class="text1"><a href="/kaipiaoxingxi">开票信息 </a></div>单位开票信息
+							<div class="socials1">
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="/static/images/todo4.png" alt="">
+							<div class="text1"><a href="/#">TODO4</a></div>TODO4
+							<div class="socials1">
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+								<a href="/#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>我们的成绩</h3>
+							<div class="text1">
+建队以来，川西北地质队干部职工发扬“三光荣”“四特别”精神，着力打造“地矿铁军”，始终坚持以地质找矿为主业，坚持稳中求进的工作基调，顽强拼搏，不断优化产业结构，努力推动地勘经济发展。相继发现和评价了以松潘县东北寨金矿为代表的多个大型、特大型矿床，累计为国家探明潜在经济价值达数千亿元的矿产，先后承担了新疆、青海、西藏、四川等地区150余个区域地质矿产调查和矿产勘查项目，参与了南水北调西线一期工程输水管线工程地质调查、新建川藏铁路线路区域地质调查及定测工程地质勘探等重大工程，为国家建设提供了大量基础地质资料，同时还走出国门积极开拓海外地勘市场，并取得良好找矿成果。</div>
+
+							<div class="text1">
+面对地勘经济新常态，川西北地质队用“大地质、大资源、大生态”理念统筹地质工作，坚持“为工业找矿，为产业和民生服务”战略定位，不断强化地质主业，扎实推进地质矿产调查，矿产资源勘查开发利用等传统地质工作；大力实施“地质+”发展战略，努力推进地勘经济转型升级，在农业地质、城市地质、旅游地质、生态环境地质等领域取得突破性进展。</div>
+
+							<div class="text1">
+建队近四十年，川西北地质队先后荣获国家金矿勘查重大贡献一等功、地矿部找矿一等奖、四川省科技进步一等奖、四川省五一劳动奖状、四川省思想政治工作优秀企业、四川省青年文明号等多项殊荣；涌现出全国五一劳动奖章和四川省五一劳动奖章获得者、全国地勘技术能手、四川省青年岗位能手等一大批德才兼备的优秀技术人才。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="/static/images/app1.jpg" alt="">
+							<div class="text1"><a href="/#">地质小工具</a></div>适用于地质野外勘察工作的一些地质小工具合集
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="/static/images/app1.jpg" alt="">
+							<div class="text1"><a href="/#">未来待添加</a></div>to-do.
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="/static/images/app1.jpg" alt="">
+							<div class="text1"><a href="/#">未来待添加</a></div>to-do.
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="/static/images/app1.jpg" alt="">
+							<div class="text1"><a href="/#">未来待添加</a></div>to-do.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+		<div id="page4" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>Our Clients</h3>
+					</div>
+				</div>
+				<div class="companies">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo1.jpg" alt="">
+							<div class="text1">Company Name</div>Aliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesent.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo2.jpg" alt="">
+							<div class="text1">Company Name</div>Fusce adipiscing quam id risus gittis, non consequat lacus interdumoin.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo3.jpg" alt="">
+							<div class="text1">Company Name</div>Quisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus um.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo4.jpg" alt="">
+							<div class="text1">Company Name</div>Courrewerwe abitur vel lorem sit amet ulla ullamcorper fermentumn vitae.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo5.jpg" alt="">
+							<div class="text1">Company Name</div>Oiliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesente.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo6.jpg" alt="">
+							<div class="text1">Company Name</div>Gusce adipiscing quam id risus gittis, non consequat lacus interdumoiju.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo7.jpg" alt="">
+							<div class="text1">Company Name</div>Niuisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus ol.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="/static/images/logo8.jpg" alt="">
+							<div class="text1">Company Name</div>Fouerourrewerwe abitur vel lorem sit amet ulla ullamcorper fermentum.
+							<br>
+							<a href="/#">Go to Site</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+-->
+		<div id="page5" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>联系我们</h3>
+							<div class="text1" 	text-align="left"; >
+							我们期待您的交流。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="map">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<div class="text1">地址</div>
+							<address>
+								<dl>
+									<dt>川西北地质队<br>
+									四川省绵阳市剑门路西段88号<br>
+									621000
+									</dt>
+									<dd><span>电话:</span>+8618148021486</dd>
+									<dd>E-mail: <a class="link-1">lee-don@live.com</a></dd>
+
+								</dl>
+							</address>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<div class="text1">&nbsp;</div>
+							<figure class="">
+							</figure>
+						</div>
+					</div>
+					<div class="col-2-4">
+						<div class="wrap-col">
+							<div class="text1">建议与意见</div>
+							<form id="form">
+							<div class="success_wrapper">
+							<div class="success">联系成功!<br>
+							<strong>我们将很快联系！</strong> </div></div>
+							<fieldset>
+							<label class="name">
+							<input type="text" value="联系人:">
+							<br class="clear">
+							<span class="error error-empty">*名字不可以用.</span><span class="empty error-empty">*必需项.</span> </label>
+							<label class="email">
+							<input type="text" value="E-mail:">
+							<br class="clear">
+							<span class="error error-empty">*邮箱不可用.</span><span class="empty error-empty">*必需项.</span> </label>
+							<label class="message">
+							<textarea>建议与意见</textarea>
+							<br class="clear">
+							<span class="error">*信息不能少于20个字.</span> <span class="empty">*必需项.</span> </label>
+							<div class="clear"></div>
+							<div class="btns"><a data-type="submit" class="link1">发送</a>
+							<div class="clear"></div>
+							</div></fieldset></form>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="copy">
+							Copyright &copy; 2021.四川省地矿局川西北地质队.<a target="_blank" href="">主页</a>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

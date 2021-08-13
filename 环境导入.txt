@@ -1,0 +1,47 @@
+pip install virtualenv　　#(python2)
+pip3 install virtualenv　　#(python3)
+
+
+# 开发的电脑上导出 pip list 到 requirements.txt 文件
+pip3 freeze > requirements.txt
+
+
+# 另一台新服务器上，安装项目虚拟环境里面的依赖包
+
+pip3 uninstall -ry requirements.txt
+pip3 install -r requirements.txt
+
+
+
+清华：https://pypi.tuna.tsinghua.edu.cn/simple
+
+阿里云：https://mirrors.aliyun.com/pypi/simple/
+
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+
+华中理工大学：http://pypi.hustunique.com/
+
+山东理工大学：http://pypi.sdutlinux.org/ 
+
+豆瓣：http://pypi.douban.com/simple/
+
+windows下，直接在 C:\Users\Administrator 目录中创建一个pip目录，再新建文件pip.ini，填入以下代码。（这里用的是清华的数据）
+
+
+# pip.ini
+ 
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple  # 设置源地址
+[install]
+trusted-host = pypi.tuna.tsinghua.edu.cn    # 信任此网站
+
+
+# cmd 临时方法
+# 正常用法
+pip3 install requests
+ 
+# 加-i用法
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple requests
+
+
+
